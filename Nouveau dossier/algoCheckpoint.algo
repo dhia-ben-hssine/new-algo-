@@ -1,0 +1,47 @@
+function sentance(str){
+    let NB_C =0;
+    let NB_V=0;
+    let NB_W=0;
+    for ( let i=0; i< str.length; i++){
+        NB_C++
+    if (str[i] === " ") {
+        NB_W++
+    }
+    const vowel= ["a","e","i","u","o"]
+    if (vowel.includes(str[i].toLowerCase())) {
+        NB_V++
+    }
+}
+return {
+    nbre_de_caractere:NB_C,
+    NB_W:NB_W+1,
+    NB_V:NB_V
+}
+}
+const str= "this is a sentance."
+console.log(sentance(str))
+ALGORITHM sentance
+VAR
+    str:STRING
+    i:INTEGER :=0
+    NB_C,NB_V:INTEGER:=0
+    NB_W:INTEGER:=1
+BEGIN
+    write("enter a sentance")
+    read(str)
+    WHILE (str(i) <> ".") DO
+       NB_C= NB_C+1
+
+       IF (str(i)= " ") THEN
+       NB_W=NB_W+1
+       END_IF
+
+       IF (str(i)= ("a","e","i","u","o")) THEN
+        NB_V=NB_V+1
+       END_IF
+       i++
+    END_WHILE
+    write(NB_C)
+    write(NB_V)
+    write(NB_W)
+END
